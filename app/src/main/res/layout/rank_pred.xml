@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/percentile_input"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="ENTER YOUR PERCENTILE"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/rank_button"
+        android:layout_width="236dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="432dp"
+        android:text="Get Rank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentile_input"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TextView
+        android:id="@+id/rank_display"
+        android:layout_width="334dp"
+        android:layout_height="147dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rank_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

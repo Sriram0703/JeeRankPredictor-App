@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/mark_input"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="ENTER YOUR MARK OUT OF 300"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/percentile_button"
+        android:layout_width="212dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="436dp"
+        android:text="Get Percentile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mark_input"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <TextView
+        android:id="@+id/mark_display"
+        android:layout_width="244dp"
+        android:layout_height="134dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentile_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
